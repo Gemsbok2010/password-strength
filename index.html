@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myNinjaApp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <!-- Material Icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <!-- Google Fonts (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Password Strengh</title>
+
+</head>
+
+<body>
+  <div class="backdrop">
+    <label for="password">Access Password</label>
+    <input type="text" class="password" id="password" onkeyup="myFunction()" autocomplete="off">
+  </div>
+  <h1>Password Strength Test</h1>
+  <div class="strength-meter" id="strength-meter"></div>
+  <input type="text" id="password-input" class="password-input" autofocus aria-labelledby="password" value="password">
+  <div id="reasons" class="reasons"></div>
+
+  <script src="test.js"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
+</body>
+
+</html>
